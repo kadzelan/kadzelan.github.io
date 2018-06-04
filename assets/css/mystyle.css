@@ -1,0 +1,434 @@
+html {
+	box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+body {
+    margin: 0
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.w3-serif {
+    font-family: serif
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+/*    Column sizes    */
+.my-half,
+.my-third,
+.my-twothird,
+.my-threequarter,
+.my-quarter {
+    float: left;
+    width: 100%
+}
+
+
+@media (min-width: 601px) {
+    .my-quarter {
+        width: 24.99999%
+    }
+	
+    .my-third {
+        width: 33.33333%
+    }
+	
+    .my-half {
+        width: 49.99999%
+    }
+		
+    .my-twothird {
+        width: 66.66666%
+    }
+	
+    .my-threequarter {
+        width: 74.99999%
+    }
+
+}
+
+/*    End Column Sizes    */
+
+/*    Padding    */
+.my-row-padding,
+.my-row-padding>.my-half,
+.my-row-padding>.my-third,
+.my-row-padding>.my-twothird,
+.my-row-padding>.my-threequarter,
+.my-row-padding>.my-quarter,
+.my-row-padding>.my-col {
+    padding: 0 10px
+}
+
+.my-container {
+    padding: 0.01em 16px
+}
+
+.my-padding-small {
+    padding: 4px 8px!important
+}
+
+.my-padding {
+    padding: 8px 16px!important
+}
+
+.my-padding-large {
+    padding: 12px 24px!important
+}
+
+.my-padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important
+}
+
+.my-padding-24 {
+    padding-top: 24px!important;
+    padding-bottom: 24px!important
+}
+
+.my-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.my-padding-48 {
+    padding-top: 48px!important;
+    padding-bottom: 48px!important
+}
+
+.my-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+/*    End Padding    */
+
+/*    Margin    */
+.my-content {
+	max-width: 980px;  			
+    margin: auto;
+	padding: auto
+}
+
+.my-margin {
+    margin: 16px!important
+}
+
+.my-margin-top {
+    margin-top: 16px!important
+}
+
+.my-margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.my-margin-left {
+    margin-left: 16px!important
+}
+
+.my-margin-right {
+    margin-right: 16px!important
+}
+/*    End Margin    */
+
+/*    Card Material Design    */
+.my-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+/*    Content Position    */
+.my-container:after,
+.my-container:before,
+.my-row-padding:after,
+.my-row-padding:before{
+    content: "";
+    display: table;
+    clear: both
+}
+
+.my-display-container {
+    display: block
+}
+
+.my-display-container {
+    position: relative
+}
+
+.my-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+.my-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+.my-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.my-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+.my-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+.my-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.my-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+.my-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+.my-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+.my-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+/*    End Content Position    */
+
+/*    Background Colors    */
+.bg-light-grey {
+	color: #000!important;
+	background-color: #f1f1f1!important
+}
+
+.bg-white {
+	color: #000!important;
+	background-color: #fff!important
+}
+
+/*    Text Sizes    */
+.my-tiny {
+    font-size: 10px!important
+}
+
+.my-small {
+    font-size: 12px!important
+}
+
+.my-medium {
+    font-size: 15px!important
+}
+
+.my-large {
+    font-size: 18px!important
+}
+
+.my-xlarge {
+    font-size: 24px!important
+}
+
+.my-xxlarge {
+    font-size: 36px!important
+}
+
+.my-xxxlarge {
+    font-size: 48px!important
+}
+
+.my-jumbo {
+    font-size: 64px!important
+}
+/*    End Text Sizes    */
+
+/*    Text Align    */
+.my-left-align {
+    text-align: left!important
+}
+
+.my-right-align {
+    text-align: right!important
+}
+
+.my-justify {
+    text-align: justify!important
+}
+
+.my-center {
+    text-align: center!important
+}
+/*    End Text Align    */
+
+/*    Text Colours    */
+.my-text-grey,
+.my-hover-text-grey:hover,
+.my-text-gray,
+.my-hover-text-gray:hover {
+    color: #757575!important
+}
+
+.my-text-black,
+.my-hover-text-black:hover,
+.my-text-black,
+.my-hover-text-black:hover {
+    color: #000000!important
+}
+
+.my-text-white,
+.my-hover-text-white:hover,
+.my-text-white,
+.my-hover-text-white:hover {
+    color: #ffffff!important
+}
+
+.my-text-light-blue,
+.my-hover-text-light-blue:hover,
+.my-text-light-blue,
+.my-hover-text-light-blue:hover {
+    color: #438fff!important
+}
+/*    End Text Colours    */
+
+/*    Progress Bars    */
+.my-circle {
+    border-radius: 50%
+}
+
+.my-round-small {
+    border-radius: 2px
+}
+
+.my-round,
+.my-round-medium {
+    border-radius: 4px
+}
+
+.my-round-large {
+    border-radius: 8px
+}
+
+.my-round-xlarge {
+    border-radius: 16px
+}
+
+.my-round-xxlarge {
+    border-radius: 32px
+}
+/*    End Progress Bars    */
+
+/*    Colors    */
+.my-light-blue,
+.my-hover-light-blue:hover {
+    color: #fff!important;
+    background-color: #438fff!important
+}
+
+.my-light-grey,
+.my-hover-light-grey:hover,
+.my-light-gray,
+.my-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+
+.my-white,
+.my-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+
+.my-black,
+.my-hover-black:hover {
+    color: #000!important;
+    background-color: #000!important
+}
+
+/*    End Colors    */
+
+/*    Others    */
+.my-badge,
+.my-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.my-badge {
+    border-radius: 50%
+}
